@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1f);
+    grid-template-rows: repeat(8, minmax(30px, auto));
+    grid-template-areas: 
+        "header header header header header"
+        "banner banner banner banner banner"
+        ". icon icon icon ."
+        "notificacao notificacao notificacao video video"
+        "depoimentos depoimentos depoimentos depoimentos depoimentos"
+        "footer footer footer footer footer";
+}
+
+header{
+    grid-area: header;
+}
+
+.banner{
+    grid-area: banner;
+}
+
+.icon{
+    grid-area: icon;
+}
+
+.notificacao{
+    grid-area: notificacao;
+}
+
+.video{
+    grid-area: video;
+}
+
+.depoimentos{
+    grid-area: depoimentos;
+}
