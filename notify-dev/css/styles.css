@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1f);
+    grid-template-rows: repeat(8, minmax(10px, auto));
+    grid-template-areas: 
+        "header header header header header"
+        "banner banner banner banner banner"
+        ". icon icon icon ."
+        "notificacao notificacao notificacao video video"
+        "depoimentos depoimentos depoimentos depoimentos depoimentos"
+        "footer footer footer footer footer";
+}
+
+header{
+    grid-area: header;
+    background-color: green;
+    width: 100%;
+    
+}
+
+.banner{
+    grid-area: banner;
+    width: 100%;
+    height: 100px;
+    
+    
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    position: absolute; 
+    top: 130px; 
+    left: 20%; 
+    width: 100%; 
+    font-size: 40px;
+    color: white;
+    
+}
+
+.frase{
+        position: absolute; 
+        top: 250px; 
+        left: 20%; 
+        width: 100%; 
+        font-size: 40px;
+        color: white;
+        font-size: 30px;
+        
+    }
+
+.frase2{
+        position: absolute; 
+        top: 300px; 
+        left: 20%; 
+        width: 100%; 
+        font-size: 40px;
+        color: white;
+        font-size: 30px;
+        
+    }
+
+.mao{
+    position: absolute; 
+        top: 106px; 
+        left: 60%; 
+
+        color: white;
+
+}
+
+.icons{
+    
+    position: absolute; 
+    top: 450px; 
+    left: 25%; 
+    width: 100%; 
+    display: flex;
+    }
+
+
+    /* BACKGROUND */
+.android{
+    border-radius: 50%;
+    display: block;
+    height: 45px;
+    width: 45px;
+    background-color: black;
+    opacity:0.65;
+	-moz-opacity: 0.40;
+    filter: alpha(opacity=65);
+    
+}
+
+.apple{
+    border-radius: 50%;
+    display: block;
+    height: 45px;
+    width: 45px;
+    background-color: black;
+    opacity:0.65;
+	-moz-opacity: 0.65;
+	filter: alpha(opacity=65);
+}
+.microsoft{
+    border-radius: 50%;
+    display: block;
+    height: 45px;
+    width: 45px;
+    background-color: black;
+    opacity:0.65;
+	-moz-opacity: 0.65;
+	filter: alpha(opacity=65);
+    
+}
+
+
+
+
+img-banner{
+    position: relative;
+    width: 100%;
+}
+
+span{
+    color: green;
+}
+
+.icon{
+    grid-area: icon;
+}
+
+.notificacao{
+    grid-area: notificacao;
+}
+
+.video{
+    grid-area: video;
+}
+
+.depoimentos{
+    grid-area: depoimentos;
+}
