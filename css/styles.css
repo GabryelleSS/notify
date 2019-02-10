@@ -111,7 +111,6 @@ h5, h6{
     text-align: center;
 }
 
-
 .imagens-depoimentos{
     cursor: pointer;
     display: flex;
@@ -195,8 +194,7 @@ li a{
 
     .depoimentos p{
         font-size: 10pt;
-        margin: 0 20px;
-        padding: 40px 0;
+        margin: 30px 20px;
     }
 
     button{
@@ -207,34 +205,61 @@ li a{
         text-align: center;
     }
 
-    .imagens-depoimentos img{
-        padding: 0 2px;
+    footer{
+        padding: 20px 0;
     }
 
     footer ul li{
         justify-content: space-around; 
+        padding: 0 20px;
     }
 }
 
 /* Breakpoint para Notebooks pequenos */
 @media(min-width: 802px){
     .notificacao, .video{
-        padding: 30px 40px 60px 70px;
+        padding: 50px 40px;
     }
 
     form{
         display: flex;
         justify-content: flex-start; 
     }
+
+    .depoimentos{
+        padding: 0 40px;
+    }
+
+    .depoimentos p{
+        padding: 0 100px;
+    }
+
+    .citacao, h5, h6, .citacao-redes-sociais {
+        padding: 3px 0;
+    }
+
+    .imagens-depoimentos img{
+        padding: 0 2px;
+    }
 }
 
 /* Breakpoint para Notebooks pequenos */
 @media(min-width: 992px){
     .notificacao, .video{
-        padding: 70px 40px 80px 70px;
+        padding: 70px 80px;
+    }
+
+    h3, .sinopse-video{
+        text-align: justify;
+    }
+
+    input{
+        padding: 0 22px;
     }
 }
 
 @media(min-width: 1200px){
-    
+    .notificacao, .video{
+        padding: 70px 130px;
+    }
 }
