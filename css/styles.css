@@ -40,7 +40,9 @@ header{
 }
 
 h3{
+    display: flex;
     font-size: 14pt;
+    justify-content: center;
 }
 
 p, a{
@@ -48,6 +50,8 @@ p, a{
 }
 
 p{
+    display: flex;
+    justify-content: center;    
     text-align: justify;
     text-indent: 15px;
 }
@@ -78,8 +82,13 @@ button{
 }
 
 .video{
+    background-color: #e3e3e3;
+    display: flex;
     grid-area: video;
-    background-color: orange;
+    height: 210px;
+    justify-content: center;
+    padding: 20px 0;
+    width: auto;
 }
 
 .depoimentos{
@@ -87,6 +96,7 @@ button{
     background-color: #fff;
     display: block;
     padding: 2px 30px;
+    margin: 0 10px;
 }
 
 .citacao{
@@ -102,13 +112,20 @@ h5, h6{
 
 
 .imagens-depoimentos{
+    cursor: pointer;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-pessoas-depoimento:hover{
+    opacity: 0.5;
 }
 
 .imagens-depoimentos img{
     height: 23px;
-    resize: none
+    resize: none;
+    padding: 2px 0;
 }
 
 .citacao-redes-sociais{
@@ -122,16 +139,11 @@ h5, h6{
     justify-content: center;
 }
 
-.twitter, .facebook, .pinterest, .google, .linkedin, .youtube{
+.redes-socias img{
     background-color: #e3e3e3;
     border-radius: 20px;
-    height: 32px;
-    padding: 3px 3px;
     margin: 1px 4px;
-    width: 32px;
-}
-
-.redes-socias img{
+    padding: 3px 3px;
     width: 25px;
 }
 
