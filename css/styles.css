@@ -116,12 +116,38 @@ h5, h6{
     text-align: center;
 }
 
+.redes-socias{
+    padding: 10px 3px;
+    display: flex;
+    justify-content: center;
+}
 
+.twitter, .facebook, .pinterest, .google, .linkedin, .youtube{
+    background-color: #e3e3e3;
+    border-radius: 20px;
+    height: 32px;
+    padding: 3px 3px;
+    margin: 1px 4px;
+    width: 32px;
+}
 
-
-
+.redes-socias img{
+    width: 25px;
+}
 
 footer{
+    background-color: #e3e3e3;
+    display: flex;
+    font-size: 8pt;
     grid-area: footer;
-    background-color: green;
+    justify-content: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li a{
+    color: #909090;
+    text-decoration: none;
 }
