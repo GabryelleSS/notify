@@ -95,19 +95,27 @@ button{
     text-align: center;
 }
 
-h5{
+h5, h6{
     font-size: 10pt;
     text-align: center;
 }
 
+
 .imagens-depoimentos{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .imagens-depoimentos img{
-    height: 25px;
+    height: 23px;
     resize: none
 }
+
+.citacao-redes-sociais{
+    font-size: 8pt;
+    text-align: center;
+}
+
 
 
 
