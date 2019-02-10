@@ -145,6 +145,10 @@ h5, h6{
     width: 25px;
 }
 
+.depoimentos h5, h6, .citacao-redes-sociais, .redes-socias, .citacao{
+    margin: 20px 10px;
+}
+
 footer ul li{
     display: inline;
     justify-content: center;
@@ -171,7 +175,30 @@ li a{
 /* Media Query */
 
 /* Breakpoint para tablet */
-@media(min-width: 700px){    
+@media(min-width: 700px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1f);
+        grid-template-rows: repeat(6, minmax(30px, auto));
+        grid-template-areas: 
+        "header header header header header"
+        "banner banner banner banner banner"
+        "icon icon icon icon icon"
+        "notificacao notificacao notificacao video video"
+        "depoimentos depoimentos depoimentos depoimentos depoimentos"
+        "footer footer footer footer footer";
+    }
+
+    .notificacao, .video{
+        padding: 50px 15px 50px 15px;
+    }
+
+    .depoimentos p{
+        font-size: 10pt;
+        margin: 0 20px;
+        padding: 40px 0;
+    }
+
     button{
         height: 33px;
     }
@@ -179,19 +206,35 @@ li a{
     h3{
         text-align: center;
     }
-    
 
-    /* form{
-        display: flex;
-        justify-content: center;
+    .imagens-depoimentos img{
+        padding: 0 2px;
     }
-
-    .video{
-        display: flex;
-        justify-content: flex-end;
-    } */
 
     footer ul li{
         justify-content: space-around; 
     }
+}
+
+/* Breakpoint para Notebooks pequenos */
+@media(min-width: 802px){
+    .notificacao, .video{
+        padding: 30px 40px 60px 70px;
+    }
+
+    form{
+        display: flex;
+        justify-content: flex-start; 
+    }
+}
+
+/* Breakpoint para Notebooks pequenos */
+@media(min-width: 992px){
+    .notificacao, .video{
+        padding: 70px 40px 80px 70px;
+    }
+}
+
+@media(min-width: 1200px){
+    
 }
