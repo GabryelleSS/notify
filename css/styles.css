@@ -129,6 +129,7 @@ h5, h6{
     background-image: url(../img/pessoa1.jpg);
     background-size: 20px;     
     flex-wrap: wrap;
+    margin: 2px;
 }
 
 div .efeito-hover:hover {
