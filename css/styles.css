@@ -118,6 +118,36 @@ h5, h6{
     justify-content: center;
 }
 
+.imagens-depoimentos{
+    display: flex;
+    justify-content: center;
+}
+
+.efeito-hover {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/pessoa1.jpg);
+    background-size: 20px;     
+    flex-wrap: wrap;
+}
+
+div .efeito-hover:hover {
+    background:
+    linear-gradient(rgba(45, 204, 112, 0.5),rgba(45, 204, 112, 0.5)),
+    url(../img/pessoa1.jpg);
+    background-size: 20px;  
+}
+
+.icones-redes-sociais{
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/facebook.png);
+}
+
+div .icones-redes-sociais img:hover{
+    background-color: #2dcc70;
+}
+
 .imagens-depoimentos img{
     height: 23px;
     resize: none;
@@ -190,6 +220,17 @@ li a{
 
     .notificacao, .video{
         padding: 50px 15px 50px 15px;
+    }
+
+    .efeito-hover {
+        width: 50px;
+        height: 50px;
+        background-size: 50px;     
+        flex-wrap: wrap;
+    }
+    
+    div .efeito-hover:hover {
+        background-size: 50px;  
     }
 
     .depoimentos p{
